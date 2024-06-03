@@ -8,6 +8,11 @@ type Metadata = {
   image?: string
 }
 
+export function transformDate(dateString: string) {
+  const [day, month, year] = dateString.split('-');
+  return `${year}-${month}-${day}`;
+}
+
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/
   let match = frontmatterRegex.exec(fileContent)
@@ -53,38 +58,17 @@ export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))
 }
 
-export function formatDate(date: string, includeRelative = false) {
-  let currentDate = new Date()
+export function formatDate(date: string) {
   if (!date.includes('T')) {
-    date = `${date}T00:00:00`
+    date = `${date}T00:00:00`;
   }
-  let targetDate = new Date(date)
+  let targetDate = new Date(date);
 
-  let yearsAgo = currentDate.getFullYear() - targetDate.getFullYear()
-  let monthsAgo = currentDate.getMonth() - targetDate.getMonth()
-  let daysAgo = currentDate.getDate() - targetDate.getDate()
-
-  let formattedDate = ''
-
-  if (yearsAgo > 0) {
-    formattedDate = `${yearsAgo}y ago`
-  } else if (monthsAgo > 0) {
-    formattedDate = `${monthsAgo}mo ago`
-  } else if (daysAgo > 0) {
-    formattedDate = `${daysAgo}d ago`
-  } else {
-    formattedDate = 'Today'
-  }
-
-  let fullDate = targetDate.toLocaleString('en-us', {
-    month: 'long',
+  let formattedDate = targetDate.toLocaleString('da-DK', {
     day: 'numeric',
+    month: 'numeric',
     year: 'numeric',
-  })
+  });
 
-  if (!includeRelative) {
-    return fullDate
-  }
-
-  return `${fullDate} (${formattedDate})`
+  return formattedDate;
 }

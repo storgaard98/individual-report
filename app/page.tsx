@@ -4,14 +4,13 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        My individual learning report
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`Welcome to my blog about my individual learning through the course Innovation project.
+         Through this blog I will share my experiences and thoughts from the course. I will present my learning goals and how I have worked to achieve them.
+         This blog is developed using Next.js and Vercel. The blog is developed as my individual report.
+        `}
       </p>
       <div className="my-8">
         <BlogPosts />

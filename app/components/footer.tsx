@@ -24,10 +24,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
+            href="https://github.com/storgaard98/TooWoodToGo"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">TooWoodToGo Github</p>
           </a>
         </li>
         <li>
@@ -35,10 +35,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/vercel/next.js"
+            href="https://github.com/storgaard98?tab=repositories"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
+            <p className="ml-2 h-7">Personal GitHub</p>
           </a>
         </li>
         <li>
@@ -46,7 +46,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
+            href="https://github.com/storgaard98/blog"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">view source</p>
