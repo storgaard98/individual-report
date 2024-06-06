@@ -1,27 +1,87 @@
 ---
 title: "Project Management and Green Coding: A Learning Journey"
 publishedAt: "01-06-2024"
-summary: "From project planning to green coding practices, this journey reflects on the evolution of project management skills and sustainable coding efforts."
+summary: "I improved project management skills by creating plans, introducing SCRUM practices, mentoring team members, and utilizing GitHub for effective collaboration"
 ---
 
-From trying to do project meal planning to choosing my learning goal as project management may seem odd, but I needed to start somewhere and get things in order. I chose project management as a learning goal because I wanted to be better at organizing my work and making our project more manageable. In previous courses, I often felt overwhelmed and unstructured, unsure where to begin. I wanted this project to be different. I aimed to take the reins, lead my group through the course, and keep an overview, ensuring we met all deadlines.
+**Project Management and Green Coding: Enhancing Skills and Structure**
 
-The first step towards improving my project management skills was creating a 10-week project plan for our project. This plan included deadlines from the course and our milestones throughout the process. Since Figma was our main workspace, I created the project plan there (see Figure X).
+From trying to do project meal planning to choosing my learning goal as project management may seem odd, 
+but I needed to start somewhere and get things in order. I chose project management as a learning goal 
+because I wanted to be better at organizing my work and making our project more manageable. In previous courses, 
+I often felt overwhelmed and unstructured, unsure where to begin. I wanted this project to be different. 
+I aimed to take the reins, lead my group through the course, and keep an overview, ensuring we met all deadlines.
 
-Besides having the project plan, I introduced stand-up meetings and a backlog. Stand-up meetings, borrowed from SCRUM (an agile project management methodology), were kept informal. During these meetings, we discussed our daily tasks, any struggles, and items that needed discussion. This helped us track our progress and ensure we stayed on schedule. The backlog was used to keep track of tasks that were postponed in favor of more urgent ones, allowing us to manage our workload effectively.
+**Creating a 10-Week Project Plan**
 
-As the project progressed and routines were established, my role as project manager became less critical. I continued to monitor our progress and ensure we stayed on track, but my role transitioned more into a tech lead position. I took responsibility for the architecture of the prototype and the development order. This role was closely related to project management, but I also mentored Frederikke in structuring our code and introduced her to Next.js. Additionally, I gave Giuseppe an introduction to HTML and CSS, so he had a basic understanding of our development work.
+The first step towards improving my project management skills was creating a 10-week project plan for our project. 
+This plan included deadlines from the course and our milestones throughout the process. Since Figma was our main workspace, 
+I created the project plan there, see Figure 2.
 
-We chose GitHub for storing and collaborating on the prototype. I set up branch protection rules and established a workflow where development occurred on separate branches, ensuring that the main branch always contained stable, working code.
+<figure style={{ margin: '1em auto' }}>
+  <img src="/projectplan.png" alt="10 week project plan" />
+  <figcaption>Figure 2: Project plan for our project including deadlines</figcaption>
+</figure>
 
-Throughout the project, I learned more about web development, hosting a web application, and related processes. This included an introduction to Next.js, a React-based framework for server-side rendering and static site generation.
+**Implementing Stand-Up Meetings and Backlogs**
 
-Much of Next.js’s architecture is written in Rust, an efficient programming language that enhances performance and energy usage, aligning with my goal of green coding. I explored green coding practices while developing our prototype, focusing on caching data retrieved from databases, such as images, to avoid redundant downloads. This was also a topic I discussed with Henrik Bærbak during a consultation, although the field of green coding in web development is still under-explored.
+Besides having the project plan, I introduced stand-up meetings and a backlog. Stand-up meetings, borrowed from [SCRUM](https://www.atlassian.com/agile/scrum) (an agile project management methodology),
+ were kept informal. During these meetings, we discussed our daily tasks, any struggles, and items that needed discussion. This helped us track our progress 
+ and ensure we stayed on schedule. **The backlog was used to keep track of tasks that were postponed in favor of more urgent ones, allowing us to manage our workload effectively**.
 
-Through my research, I found limited information on the software aspects of green coding. However, I learned that hosting the application on a serverless platform, rather than a traditional server, can significantly impact energy usage. Serverless platforms can scale resources based on application demand, whereas traditional servers consume the same power regardless of usage.
+**Transitioning Roles**
 
-One of the smart features I learned in Next.js is dynamic routing. This allows for efficient routing and API creation within the same environment. For example, on the STARK page, we generate a URL with the product ID, which is passed as a prop to the React component within the Next.js application. This enables dynamic and easy retrieval of the correct product from the database (see the STARK folder structure in the attached image).
+As the project progressed and routines were established, my role as project manager became less critical. 
+I continued to monitor our progress and ensure we stayed on track, but my role transitioned more into a tech lead position. 
+I took responsibility for the architecture of the prototype and the development order. This role was closely related to project management, 
+but I also mentored Frederikke in structuring our code and introduced her to Next.js. Additionally, 
+I gave Giuseppe an introduction to HTML and CSS, so he had a basic understanding of our development work.
 
-We also utilized dynamic routing in our API, specifically in the /pages/api/products/[id] directory. This allows us to dynamically handle API calls to our database, following the same principles mentioned before. This approach simplifies fetching and updating product data efficiently (see the API folder structure in the attached image).
+**Utilizing GitHub for Collaboration**
 
-[SCRUM]: https://www.atlassian.com/agile/scrum
+We chose GitHub for storing and collaborating on the prototype. I set up branch protection rules and 
+established a workflow where development occurred on separate branches, ensuring that the main branch always contained stable, working code.
+
+**Learning and Applying Green Coding Practices**
+
+Throughout the project, I learned more about web development, hosting a web application, and related processes. 
+This included an introduction to Next.js, a React-based framework for server-side rendering and static site generation.
+
+Much of Next.js’s architecture is written in Rust, an efficient programming language that enhances performance and energy usage, 
+aligning with my goal of green coding. **I explored green coding practices while developing our prototype, focusing on caching data retrieved from databases, 
+such as images, to avoid redundant downloads**. This was also a topic I discussed with Henrik Bærbak during a consultation, 
+although the field of green coding in web development is still under-explored.
+
+**Researching Hosting Options for Energy Efficiency**
+
+Through my research, I found limited information on the software aspects of green coding. However, 
+I learned that hosting the application on a serverless platform, rather than a traditional server, can significantly impact energy usage.
+ Serverless platforms can scale resources based on application demand, whereas traditional servers consume the same power regardless of usage.
+
+**Learning Dynamic Routing in Next.js**
+
+One of the smart features I learned in Next.js is dynamic routing. This allows for efficient routing and API creation within the same environment. 
+For example, on the STARK page, we generate a URL with the product ID, which is passed as a prop to the React component within the Next.js application. 
+This enables dynamic and easy retrieval of the correct product from the database, see figure 3.
+
+<figure style={{ margin: '1em auto' }}>
+  <img src="/stark-routing.png" alt="folder structure of the STARK page" />
+  <figcaption>Figure 3: Folder structure of the STARK page</figcaption>
+</figure>
+
+**Utilizing Dynamic Routing in the API**
+
+We also utilized dynamic routing in our API, specifically in the /pages/api/products/[id] directory. 
+This allows us to dynamically handle API calls to our database, following the same principles mentioned before. 
+This approach simplifies fetching and updating product data efficiently, see figure 4.
+
+<figure style={{ margin: '1em auto' }}>
+  <img src="/api.png" alt="Next.js API folder structure" />
+  <figcaption>Figure 4: Next.js API folder structure</figcaption>
+</figure>
+
+
+<div style={{ textAlign: 'center', marginBottom: '1em' }}>
+  <a href="/blog/living-experiment" style={{ marginRight: '10px', padding: '8px 16px', backgroundColor: '#2d5e9d', color: '#fefefe', textDecoration: 'none', borderRadius: '4px' }}>Previous</a>
+  <a href="/blog/reflections" style={{ padding: '8px 16px', backgroundColor: '#2d5e9d', color: '#fefefe', textDecoration: 'none', borderRadius: '4px' }}>Next</a>
+</div>

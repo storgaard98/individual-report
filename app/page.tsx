@@ -9,7 +9,7 @@ export default function Page() {
       <p className="mb-4">
         {`Welcome to my blog about my individual learning through the course Innovation project.
          Through this blog I will share my experiences and thoughts from the course. I will present my learning goals and how I have worked to achieve them.
-         This blog is developed using Next.js and Vercel. The blog is developed as my individual report.
+         The blog is developed as my individual report.
         `}
       </p>
       <div className="my-8">
